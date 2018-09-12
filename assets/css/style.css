@@ -1,0 +1,21 @@
+
+body {
+    text-align: center;
+
+}
+
+header {
+    font-size: 60px;
+}
+
+.wrapper {
+    border: solid 2px red;
+    margin: 0 20%;
+    
+}
+
+#submitBtn {
+    background: #30343a;
+    /* width: 50px; */
+   
+}
