@@ -1,7 +1,9 @@
 
 body {
     text-align: center;
-
+    margin: 0;
+    background: #595050;
+    
 }
 
 header {
@@ -9,13 +11,76 @@ header {
 }
 
 .wrapper {
-    border: solid 2px red;
+    background: white;
+    /* height: 700px; */
     margin: 0 20%;
-    
 }
 
-#submitBtn {
-    background: #30343a;
-    /* width: 50px; */
+.questionBox {
+    margin: 15px;
+}
+.question {
+    font-size: 32px;
+    margin: 15px;
+}
+.buttons {
+  /* display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 25% 25% 25% 25%;
+  */
+  
+}
+
+form {
+    border: solid 2px black;
+    
+    margin: 20px;
+}
+button {
+    background: black;
+    border: solid 2px black;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 15px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#timer {
+    background: #ffffff;
+    height: 50px;
+    
+    margin-top: 10px;
+}
+
+#timerBtn {
    
+   position: relative;
+   top: 250px;
+}
+
+#timerBtn:hover {
+    color: #e00000;
+}
+
+
+
+.score {
+    background: #ffffff;
+    height: 500px;
+    margin: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+
+.options {
+    text-align: left;
+    width: 200px;
+    margin: auto;
+}
+
+.timeBox{
+    position: sticky;
 }
