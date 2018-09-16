@@ -1,16 +1,208 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>Trivia</title>
 </head>
+
 <body>
-        <header>Space Trivia!</header>
-        <a href="index.html"><button id="timerBtn">Begin!</button></a>
-        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-        <script src="assets/javascript/app.js"></script>
+
+    <header>Space Trivia!</header>
+    <div class="wrapper">
+
+
+
+        <h1 class="timeBox">
+            Time Remaining:
+            <div id="timer">
+                60
+            </div>
+            Seconds
+        </h1>
+        <!-- place holders for actual questions and answers -->
+        <form name="myform">
+            <div class="questionBox">
+                <div class="question">
+                    <label>1. What was the name of the first manned mission to land on the moon? </label>
+                </div>
+                <div class="options">
+                    <input type="radio" name="q1" value="a" id="q1a"> A. Apollo 13
+                    <br>
+                    <input type="radio" name="q1" value="b" id="q1b"> B. Apollo 11
+                    <br>
+                    <input type="radio" name="q1" value="c" id="q1c"> C. Apollo 10
+                    <br>
+                    <input type="radio" name="q1" value="d" id="q1d"> D. Apollo 12
+                    <br>
+                </div>
+            </div>
+
+
+            <div class="questionBox">
+                <div class="question">
+                    <label>2. What is the closest star to our own sun?</label>
+                </div>
+                <div class="options">
+                    <input type="radio" name="q2" value="a" id="q2a"> A. Alpha Centauri A
+                    <br>
+                    <input type="radio" name="q2" value="b" id="q2b"> B. Beatle Juice
+                    <br>
+                    <input type="radio" name="q2" value="c" id="q2c"> C. Proxima Centauri
+                    <br>
+                    <input type="radio" name="q2" value="d" id="q2d"> D. Tau Ceti
+                    <br>
+                </div>
+            </div>
+
+
+            <div class="questionBox">
+                <div class="question">
+                    <label>3. In our solar system, which planet has the shortest day?</label>
+                </div>
+                <div class="options">
+                    <input type="radio" name="q3" value="a" id="q3a"> A. Jupiter
+                    <br>
+                    <input type="radio" name="q3" value="b" id="q3b"> B. Earth
+                    <br>
+                    <input type="radio" name="q3" value="c" id="q3c"> C. Mars
+                    <br>
+                    <input type="radio" name="q3" value="d" id="q3d"> D. Uranus
+                    <br>
+                </div>
+            </div>
+
+
+            <div class="questionBox">
+                <div class="question">
+                    <label>4. The first human-made object to land on the moon was launched by what country?</label>
+                </div>
+                <div class="options">
+                    <input type="radio" name="q4" value="a" id="q4a"> A. United States
+                    <br>
+                    <input type="radio" name="q4" value="b" id="q4b"> B. China
+                    <br>
+                    <input type="radio" name="q4" value="c" id="q4c"> C. United Kingdom
+                    <br>
+                    <input type="radio" name="q4" value="d" id="q4d"> D. The Soviet Union
+                    <br>
+                </div>
+            </div>
+
+
+            <div class="questionBox">
+                <div class="question">
+                    <label>5. The Great Red Spot is a gigantic storm located on which planet in our solar system?</label>
+                </div>
+                <div class="options">
+                    <input type="radio" name="q5" value="a" id="q5a"> A. Saturn
+                    <br>
+                    <input type="radio" name="q5" value="b" id="q5b"> B. Jupiter
+                    <br>
+                    <input type="radio" name="q5" value="c" id="q5c"> C. Mars
+                    <br>
+                    <input type="radio" name="q5" value="d" id="q5d"> D. Venus
+                    <br>
+                </div>
+            </div>
+
+
+            <div class="questionBox">
+                <div class="question">
+                    <label>6. Which planet in our solar system has the most oxygen?</label>
+                </div>
+                <div class="options">
+                    <input type="radio" name="q6" value="a" id="q6a"> A. Earth
+                    <br>
+                    <input type="radio" name="q6" value="b" id="q6b"> B. Jupiter
+                    <br>
+                    <input type="radio" name="q6" value="c" id="q6c"> C. Mars
+                    <br>
+                    <input type="radio" name="q6" value="d" id="q6d"> D. Uranus
+                    <br>
+                </div>
+            </div>
+
+
+            <div class="questionBox">
+                <div class="question">
+                    <label>7. How many planets in our solar system have moons?</label>
+                </div>
+                <div class="options">
+                    <input type="radio" name="q7" value="a" id="q7a"> A. Five
+                    <br>
+                    <input type="radio" name="q7" value="b" id="q7b"> B. Four
+                    <br>
+                    <input type="radio" name="q7" value="c" id="q7c"> C. Six
+                    <br>
+                    <input type="radio" name="q7" value="d" id="q7d"> D. Seven
+                    <br>
+                </div>
+            </div>
+
+
+            <div class="questionBox">
+                <div class="question">
+                    <label>8. Which planet is furthest from the sun?</label>
+                </div>
+                <div class="options">
+                    <input type="radio" name="q8" value="a" id="q8a"> A. Jupiter
+                    <br>
+                    <input type="radio" name="q8" value="b" id="q8b"> B. Uranus
+                    <br>
+                    <input type="radio" name="q8" value="c" id="q8c"> C. Saturn
+                    <br>
+                    <input type="radio" name="q8" value="d" id="q8d"> D. Neptune
+                    <br>
+                </div>
+            </div>
+
+
+            <div class="questionBox">
+                <div class="question">
+                    <label>9. What planet in our solar system has the most gravity?</label>
+                </div>
+                <div class="options">
+                    <input type="radio" name="q9" value="a" id="q9a"> A. Earth
+                    <br>
+                    <input type="radio" name="q9" value="b" id="q9b"> B. Jupiter
+                    <br>
+                    <input type="radio" name="q9" value="c" id="q9c"> C. Mars
+                    <br>
+                    <input type="radio" name="q9" value="d" id="q9d"> D. Saturn
+                    <br>
+                </div>
+            </div>
+
+
+            <div class="questionBox">
+                <div class="question">
+                    <label>10. Who was the first human to travel into space?</label>
+                </div>
+                <div class="options">
+                    <input type="radio" name="q10" value="a" id="q10a"> A. Yuri Gagarin
+                    <br>
+                    <input type="radio" name="q10" value="b" id="q10b"> B. Buzz Aldrin
+                    <br>
+                    <input type="radio" name="q10" value="c" id="q10c"> C. Buzz Lightyear
+                    <br>
+                    <input type="radio" name="q10" value="d" id="q10d"> D. Neil Armstrong
+                    <br>
+                </div>
+            </div>
+
+            <button id="submit">Submit</button>
+
+
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="assets/javascript/app.js"></script>
 </body>
+
 </html>
