@@ -1,34 +1,4 @@
 
-//
-//create an object that holds questions and answers
-//
-
-// var questions = [
-//     {
-//         q: "question 1",
-//         choices: ["choice a", "choice b", "choice c", "choice d"],
-//         a: 1
-//     },
-
-//     {
-//         q: "question 2",
-//         choices: ["choice a", "choice b", "choice c", "choice d"],
-//         a: 3
-//     },
-
-//     {
-//         q: "question 3",
-//         choices: ["choice a", "choice b", "choice c", "choice d"],
-//         a: 0
-//     },
-
-//     {
-//         q: "question 4",
-//         choices: ["choice a", "choice b", "choice c", "choice d"],
-//         a: 2
-//     }
-// ]
-
 $(document).ready(); {
 
     function start() {
@@ -38,7 +8,7 @@ $(document).ready(); {
             console.log(count);
             count--;
             if (count < 0) {
-
+  
                 setTimeout(function () {
                     stopInterval();
                 }, 10)
@@ -62,7 +32,7 @@ $(document).ready(); {
             var question2 = document.forms["myform"]["q2"].value;
             var question3 = document.forms["myform"]["q3"].value;
             var question4 = document.forms["myform"]["q4"].value;
-            var question5 = document.forms["myform"]["q5"].value;
+            var question5 = document.forms["myform"]["q5"].value; 
             var question6 = document.forms["myform"]["q6"].value;
             var question7 = document.forms["myform"]["q7"].value;
             var question8 = document.forms["myform"]["q8"].value;
@@ -105,7 +75,7 @@ $(document).ready(); {
                 score++;
             }
 
-            $(".wrapper").html("<div class='score'><p>You scored: " + score + "/10</p></div>");
+            $(".wrapper").html("<div class='score'><p id='result'>You scored: " + score + "/10</p></div>");
 
         }
 

@@ -2,40 +2,47 @@
 body {
     text-align: center;
     margin: 0;
-    background: #595050;
+    background-image: url("images/space.jpg");
     
 }
 
 header {
     font-size: 60px;
+    color: #ffffff;
+    text-shadow: 1.5px 1.5px  #0061ff;
+    margin: 20px;
+}
+
+h1 {
+    border: solid 5px black;
+    margin: 20px 35px;
+    padding-top: 20px;
 }
 
 .wrapper {
-    background: white;
-    /* height: 700px; */
+    background: #0061ff;
     margin: 0 20%;
+    padding: 5px 0;
+    border: solid 10px black;
+    
 }
 
 .questionBox {
     margin: 15px;
+    background: #ffffff;
+    border: solid 5px black;
 }
+
 .question {
     font-size: 32px;
     margin: 15px;
 }
-.buttons {
-  /* display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: 25% 25% 25% 25%;
-  */
-  
-}
 
 form {
-    border: solid 2px black;
     
     margin: 20px;
 }
+
 button {
     background: black;
     border: solid 2px black;
@@ -46,6 +53,10 @@ button {
     color: #ffffff;
 }
 
+button:hover {
+    color: #0061ff;
+}
+
 #timer {
     background: #ffffff;
     height: 50px;
@@ -54,33 +65,44 @@ button {
 }
 
 #timerBtn {
-   
+   font-size: 25px;
    position: relative;
-   top: 250px;
+   top: 220px;
+   border: solid 2px #0061ff;
 }
-
-#timerBtn:hover {
-    color: #e00000;
-}
-
-
 
 .score {
     background: #ffffff;
     height: 500px;
-    margin: 20%;
+    margin: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 32px;
+    font-size: 50px;
+    font-weight: bold;
+    border: solid 5px black;
 }
 
 .options {
     text-align: left;
     width: 200px;
-    margin: auto;
+    margin: 10px auto;
 }
 
 .timeBox{
+    background: white;
     position: sticky;
+    top: 10px;
+}
+
+#result {
+    background: #0061ff;
+    border: solid 5px black;
+    color: white;
+    text-shadow: 1px 1px black;
+    padding: 100px;
+}
+
+label {
+    font-weight: bold;
 }
